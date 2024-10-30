@@ -65,9 +65,9 @@ const AuthComponent = () => {
     <div className="body_new">
     <div className="auth-container">
         <h2 className="title" style={{marginTop:"5%"}}>
-            <img className="logo" src="https://th.bing.com/th/id/OIP.nTvhIwr__sWbjLxnhM3_BwHaHa?rs=1&pid=ImgDetMain"/>
+            <img className="logo" src="https://th.bing.com/th/id/OIP.nTvhIwr__sWbjLxnhM3_BwHaHa?rs=1&pid=ImgDetMain" alt=""/>
             Tennis club Riadh Landalous
-            <img className="logo" src="https://th.bing.com/th/id/OIP.nTvhIwr__sWbjLxnhM3_BwHaHa?rs=1&pid=ImgDetMain"/>
+            <img className="logo" src="https://th.bing.com/th/id/OIP.nTvhIwr__sWbjLxnhM3_BwHaHa?rs=1&pid=ImgDetMain" alt=""/>
         </h2> 
 
       
@@ -108,9 +108,9 @@ const AuthComponent = () => {
 
     <Modal show={modalIsOpen} onHide={() => setModalIsOpen(false)}>
         <Modal.Header closeButton>
-          <h4><img className="logo_2" src="https://th.bing.com/th/id/OIP.nTvhIwr__sWbjLxnhM3_BwHaHa?rs=1&pid=ImgDetMain"/>
+          <h4><img className="logo_2" src="https://th.bing.com/th/id/OIP.nTvhIwr__sWbjLxnhM3_BwHaHa?rs=1&pid=ImgDetMain" alt=""/>
           Welcome new user
-          <img className="logo_2" src="https://th.bing.com/th/id/OIP.nTvhIwr__sWbjLxnhM3_BwHaHa?rs=1&pid=ImgDetMain"/>
+          <img className="logo_2" src="https://th.bing.com/th/id/OIP.nTvhIwr__sWbjLxnhM3_BwHaHa?rs=1&pid=ImgDetMain" alt=""/>
           </h4>
         </Modal.Header>
         <Modal.Body className="new_form">

@@ -79,33 +79,6 @@ const CalendarView = () => {
     }
   };
 
-  const handleAddUser = async () => {
-    try {
-      const userCredential = await createUserWithEmailAndPassword(
-        auth,
-        newEvent.email,
-        newEvent.password
-      );
-
-      const user = userCredential.user;
-
-      await addDoc(collection(db, 'users'), {
-        uid: user.uid,
-        user_name: newEvent.user_name,
-        user_lastname: newEvent.user_lastname,
-        email: newEvent.email,
-        role: newEvent.role,
-        status: 'active'
-      });
-
-      setNewEvent({ user_name: '', user_lastname: '', email: '', password: '', role: 'user' });
-      setModalIsOpen(false);
-      alert('User added successfully!');
-    } catch (error) {
-      console.error('Error adding user: ', error);
-      alert('Failed to add user: ' + error.message);
-    }
-  };
 
   const handleActivateUser = async (userId) => {
     try {
